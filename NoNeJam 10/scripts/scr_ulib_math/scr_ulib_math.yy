@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ulib_math",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ulib_math",
+  "parent":{
+    "name":"ULib",
+    "path":"folders/Libraries/ULib.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

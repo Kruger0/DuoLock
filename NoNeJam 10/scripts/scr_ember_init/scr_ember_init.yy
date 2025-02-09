@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ember_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ember_init",
+  "parent":{
+    "name":"Ember",
+    "path":"folders/Libraries/Ember.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

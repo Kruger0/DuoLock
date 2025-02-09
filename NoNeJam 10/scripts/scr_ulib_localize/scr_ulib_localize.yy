@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ulib_localize",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ulib_localize",
+  "parent":{
+    "name":"ULib",
+    "path":"folders/Libraries/ULib.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

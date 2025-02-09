@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__textbox_actor_class",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__textbox_actor_class",
+  "parent":{
+    "name":"Private",
+    "path":"folders/Libraries/TextBox/Private.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
