@@ -4,8 +4,9 @@ surface_depth_disable(true)
 
 
 #macro DEBUG			global.debug
-#macro GAME_WID			480
-#macro GAME_HEI			270
+#macro DEBUG_KEY		vk_f9
+#macro GAME_WID			640
+#macro GAME_HEI			360
 #macro GRID				16
 #macro ROOM_SPEED		game_get_speed(gamespeed_fps)
 #macro ROOM_NAME		global.room_name
@@ -22,7 +23,6 @@ surface_depth_disable(true)
 #macro c_menu_on		#FFFFFF
 #macro c_menu_off		#606060
 #macro c_sunlight		#FFF0B0
-#macro c_eletriclight	#FFF0B0
 
 
 var KEEP_DATA = false;
@@ -30,14 +30,9 @@ if (file_exists(FILE_SAVE) && KEEP_DATA) {
 	global.gamedata = json_load(FILE_SAVE)
 } else {
 	global.gamedata = {
-		player : {
-			
+		video : {
+			fullscreen : false,
 		},
-		
-		level : [
-			
-		],		
-		
 		audio : [
 			1.0, 0.6, 0.6
 		]
@@ -59,15 +54,10 @@ enum OpData {
 }
 
 
-
 global.debug			= false
-global.pause			= false
-global.freezed			= false
-global.room_timer		= 0
 global.mid_transition	= false
-global.showing_score	= false
-global.grav				= 0.25
-global.gamespeed		= 1
 global.gametime			= 0
 global.room_name		= ""
 global.surf_shadow		= -1
+
+global.current_char		= -1
