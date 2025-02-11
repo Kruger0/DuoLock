@@ -6,7 +6,7 @@
   "name":"input_binding_gamepad_set",
   "parent":{
     "name":"06  Binding Access",
-    "path":"folders/Libraries/Input/06  Binding Access.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/06  Binding Access.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"input_check_press_most_recent",
   "parent":{
     "name":"03  Advanced Checkers",
-    "path":"folders/Libraries/Input/03  Advanced Checkers.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/03  Advanced Checkers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

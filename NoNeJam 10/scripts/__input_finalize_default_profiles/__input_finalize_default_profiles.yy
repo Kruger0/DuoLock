@@ -6,7 +6,7 @@
   "name":"__input_finalize_default_profiles",
   "parent":{
     "name":"Initialization",
-    "path":"folders/Libraries/Input/(System)/Initialization.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System)/Initialization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

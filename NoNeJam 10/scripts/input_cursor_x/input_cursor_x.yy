@@ -6,7 +6,7 @@
   "name":"input_cursor_x",
   "parent":{
     "name":"09  Cursor",
-    "path":"folders/Libraries/Input/09  Cursor.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/09  Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

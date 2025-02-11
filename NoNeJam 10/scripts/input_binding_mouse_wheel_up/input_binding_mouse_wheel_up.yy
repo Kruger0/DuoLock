@@ -6,7 +6,7 @@
   "name":"input_binding_mouse_wheel_up",
   "parent":{
     "name":"05  Binding Creators",
-    "path":"folders/Libraries/Input/05  Binding Creators.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/05  Binding Creators.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

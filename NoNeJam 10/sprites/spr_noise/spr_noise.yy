@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"EasyNoise",
-    "path":"folders/Libraries/EasyNoise.yy",
+    "path":"folders/Libraries/Krug/EasyNoise.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

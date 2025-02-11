@@ -6,7 +6,7 @@
   "name":"__input_system_tick",
   "parent":{
     "name":"Ticks",
-    "path":"folders/Libraries/Input/(System)/Ticks.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System)/Ticks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

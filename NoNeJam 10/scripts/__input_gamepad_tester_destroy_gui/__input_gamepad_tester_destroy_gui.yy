@@ -6,7 +6,7 @@
   "name":"__input_gamepad_tester_destroy_gui",
   "parent":{
     "name":"Gamepad Tester",
-    "path":"folders/Libraries/Input/(System)/Gamepad Tester.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System)/Gamepad Tester.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

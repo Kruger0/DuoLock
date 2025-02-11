@@ -6,7 +6,7 @@
   "name":"__input_csv_to_array",
   "parent":{
     "name":"Initialization",
-    "path":"folders/Libraries/Input/(System)/Initialization.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System)/Initialization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

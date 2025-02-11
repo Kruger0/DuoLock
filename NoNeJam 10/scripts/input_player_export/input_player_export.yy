@@ -6,7 +6,7 @@
   "name":"input_player_export",
   "parent":{
     "name":"13  Exporting and Importing",
-    "path":"folders/Libraries/Input/13  Exporting and Importing.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/13  Exporting and Importing.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

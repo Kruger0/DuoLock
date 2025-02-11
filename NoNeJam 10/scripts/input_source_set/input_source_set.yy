@@ -6,7 +6,7 @@
   "name":"input_source_set",
   "parent":{
     "name":"18  Sources",
-    "path":"folders/Libraries/Input/18  Sources.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/18  Sources.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

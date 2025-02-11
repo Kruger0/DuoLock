@@ -6,7 +6,7 @@
   "name":"input_trigger_effect_off",
   "parent":{
     "name":"22  Trigger Effects",
-    "path":"folders/Libraries/Input/22  Trigger Effects.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/22  Trigger Effects.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

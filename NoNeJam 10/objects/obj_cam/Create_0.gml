@@ -1,6 +1,6 @@
 
 
-application_surface_draw_enable(false)
+//application_surface_draw_enable(false)
 cam = view_camera[0]
 angle = 0
 
@@ -17,8 +17,8 @@ cam_w = GAME_WID * scl.cam
 cam_h = GAME_HEI * scl.cam
 cam_limit = {x:0, y:0, z:0, w:0}
 
-surf_light = -1
-ambient_light = #EFEFEF
+//surf_light = -1
+//ambient_light = #EFEFEF
 
 
 //==============================// Update //=================================
@@ -33,7 +33,7 @@ window_center()
 
 follow_pos		= new Vector2(0)
 follow_spd		= 0.1
-follow_offset	= new Vector2(0, -12)
+follow_offset	= new Vector2(0, -8)
 
 //==============================// Shake //=================================
 

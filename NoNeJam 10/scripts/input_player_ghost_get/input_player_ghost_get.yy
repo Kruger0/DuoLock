@@ -6,7 +6,7 @@
   "name":"input_player_ghost_get",
   "parent":{
     "name":"15  Players",
-    "path":"folders/Libraries/Input/15  Players.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/15  Players.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

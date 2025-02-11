@@ -6,7 +6,7 @@
   "name":"__input_gamepad_type_swap_ab",
   "parent":{
     "name":"Gamepads and Steam",
-    "path":"folders/Libraries/Input/(System)/Gamepads and Steam.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System)/Gamepads and Steam.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

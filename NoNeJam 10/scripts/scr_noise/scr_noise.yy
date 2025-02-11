@@ -6,7 +6,7 @@
   "name":"scr_noise",
   "parent":{
     "name":"EasyNoise",
-    "path":"folders/Libraries/EasyNoise.yy",
+    "path":"folders/Libraries/Krug/EasyNoise.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

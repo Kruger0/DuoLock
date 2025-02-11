@@ -6,7 +6,7 @@
   "name":"textbox_config",
   "parent":{
     "name":"Public",
-    "path":"folders/Libraries/TextBox/Public.yy",
+    "path":"folders/Libraries/Krug/TextBox/Public.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

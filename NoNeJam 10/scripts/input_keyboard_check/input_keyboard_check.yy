@@ -6,7 +6,7 @@
   "name":"input_keyboard_check",
   "parent":{
     "name":"26  Keyboard (Direct)",
-    "path":"folders/Libraries/Input/26  Keyboard (Direct).yy",
+    "path":"folders/Libraries/JuJuAdams/Input/26  Keyboard (Direct).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

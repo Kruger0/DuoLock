@@ -6,7 +6,7 @@
   "name":"scr_ulib_pubsub",
   "parent":{
     "name":"ULib",
-    "path":"folders/Libraries/ULib.yy",
+    "path":"folders/Libraries/Krug/ULib.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"input_icon_not_a_binding",
   "parent":{
     "name":"Icons",
-    "path":"folders/Libraries/Input/(System)/Icons.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System)/Icons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

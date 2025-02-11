@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Private",
-    "path":"folders/Libraries/TextBox/Private.yy",
+    "path":"folders/Libraries/Krug/TextBox/Private.yy",
   },
   "parentObjectId":null,
   "persistent":false,

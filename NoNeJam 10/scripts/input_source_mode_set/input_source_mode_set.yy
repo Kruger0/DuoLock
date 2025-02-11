@@ -6,7 +6,7 @@
   "name":"input_source_mode_set",
   "parent":{
     "name":"17  Source Modes",
-    "path":"folders/Libraries/Input/17  Source Modes.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/17  Source Modes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

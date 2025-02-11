@@ -3,9 +3,6 @@
   "%Name":"obj_char1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_char1",
@@ -15,8 +12,8 @@
     "path":"folders/Objects/Entities.yy",
   },
   "parentObjectId":{
-    "name":"par_entity",
-    "path":"objects/par_entity/par_entity.yy",
+    "name":"par_character",
+    "path":"objects/par_character/par_character.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -39,6 +36,9 @@
     "name":"spr_char1_idle",
     "path":"sprites/spr_char1_idle/spr_char1_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_char_colision",
+    "path":"sprites/spr_char_colision/spr_char_colision.yy",
+  },
   "visible":true,
 }

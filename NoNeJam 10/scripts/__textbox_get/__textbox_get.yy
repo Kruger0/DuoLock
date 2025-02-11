@@ -6,7 +6,7 @@
   "name":"__textbox_get",
   "parent":{
     "name":"Private",
-    "path":"folders/Libraries/TextBox/Private.yy",
+    "path":"folders/Libraries/Krug/TextBox/Private.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

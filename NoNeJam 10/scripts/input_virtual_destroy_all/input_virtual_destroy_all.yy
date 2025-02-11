@@ -6,7 +6,7 @@
   "name":"input_virtual_destroy_all",
   "parent":{
     "name":"14  Virtual Buttons",
-    "path":"folders/Libraries/Input/14  Virtual Buttons.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/14  Virtual Buttons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

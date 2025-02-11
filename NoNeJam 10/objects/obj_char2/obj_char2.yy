@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_char2",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_char2",
   "overriddenProperties":[],
@@ -10,8 +12,8 @@
     "path":"folders/Objects/Entities.yy",
   },
   "parentObjectId":{
-    "name":"par_entity",
-    "path":"objects/par_entity/par_entity.yy",
+    "name":"par_character",
+    "path":"objects/par_character/par_character.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,6 +36,9 @@
     "name":"spr_char2_idle",
     "path":"sprites/spr_char2_idle/spr_char2_idle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_char_colision",
+    "path":"sprites/spr_char_colision/spr_char_colision.yy",
+  },
   "visible":true,
 }

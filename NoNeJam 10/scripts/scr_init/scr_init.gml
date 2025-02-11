@@ -3,6 +3,9 @@ global.seed = random_get_seed()
 surface_depth_disable(true)
 
 
+#macro DEVMODE			false
+#macro DevMode:DEVMODE	true
+
 #macro DEBUG			global.debug
 #macro DEBUG_KEY		vk_f9
 #macro GAME_WID			640
@@ -60,4 +63,4 @@ global.gametime			= 0
 global.room_name		= ""
 global.surf_shadow		= -1
 
-global.current_char		= -1
+global.current_char		= obj_char1

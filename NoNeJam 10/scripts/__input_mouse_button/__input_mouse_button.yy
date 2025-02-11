@@ -6,7 +6,7 @@
   "name":"__input_mouse_button",
   "parent":{
     "name":"Keyboard and Mouse",
-    "path":"folders/Libraries/Input/(System)/Keyboard and Mouse.yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System)/Keyboard and Mouse.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

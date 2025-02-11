@@ -6,7 +6,7 @@
   "name":"__input_transform_coordinate",
   "parent":{
     "name":"(System)",
-    "path":"folders/Libraries/Input/(System).yy",
+    "path":"folders/Libraries/JuJuAdams/Input/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

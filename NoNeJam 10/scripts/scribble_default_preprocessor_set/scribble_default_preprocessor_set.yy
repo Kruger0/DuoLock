@@ -6,7 +6,7 @@
   "name":"scribble_default_preprocessor_set",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/Libraries/Scribble/Miscellaneous.yy",
+    "path":"folders/Libraries/JuJuAdams/Scribble/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

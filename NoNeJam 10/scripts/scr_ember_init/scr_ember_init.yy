@@ -6,7 +6,7 @@
   "name":"scr_ember_init",
   "parent":{
     "name":"Ember",
-    "path":"folders/Libraries/Ember.yy",
+    "path":"folders/Libraries/Krug/Ember.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

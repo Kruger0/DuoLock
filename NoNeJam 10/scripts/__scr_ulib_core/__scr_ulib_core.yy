@@ -6,7 +6,7 @@
   "name":"__scr_ulib_core",
   "parent":{
     "name":"ULib",
-    "path":"folders/Libraries/ULib.yy",
+    "path":"folders/Libraries/Krug/ULib.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
