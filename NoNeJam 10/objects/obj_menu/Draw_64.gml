@@ -2,10 +2,10 @@
 
 var _ct = #FFFF40
 var _cb = #FF6020
-var _title_scl = 2.0
+var _title_scl = 4.0
 
 // title
-scribble("[wave]Leverage").blend(_ct, 1).transform(_title_scl, _title_scl).gradient(_cb, 1.2).align(1, 1).draw(GUI_WID/2, GUI_HEI*0.2)
+scribble("[wave]NoNeJam 10 Game").blend(_ct, 1).transform(_title_scl, _title_scl).gradient(_cb, 1.2).align(1, 1).draw(GUI_WID/2, GUI_HEI*0.2)
 
 interface_process()
 interface_draw()

@@ -1,6 +1,4 @@
 
-
-
 // GUI
 var _gui_w		= display_get_gui_width();
 var _gui_h		= display_get_gui_height();
@@ -37,7 +35,7 @@ matrix_set(matrix_world, matrix_build(
 		var _port_sx	= (portrait_size / portrait_wid) - portrait_skew;
 		var _port_sy	= (portrait_size / portrait_wid) + portrait_skew;
 	
-		draw_sprite_ext(portrait_sprite, portrait_frame, _port_x, _port_y, _port_sx, _port_sy, 0, portrait_color, portrait_alpha)
+		draw_sprite_ext(spr_char1_portrait, portrait_frame, _port_x, _port_y, _port_sx, _port_sy, 0, portrait_color, portrait_alpha)
 	}
 	
 	

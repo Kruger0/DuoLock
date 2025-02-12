@@ -1,12 +1,4 @@
 
-if (DEVMODE && keyboard_check_pressed(DEBUG_KEY)) {
-	
-	if (DEBUG) {
-		DEBUG = false
-	} else {
-		DEBUG = true
-	}
-}
 
 GAME_TIME += 16.67
 
@@ -26,3 +18,10 @@ if (keyboard_check_pressed(ord("F"))) {
 	}
 }
 
+if (keyboard_check_pressed(ord("E"))) {
+	textbox_create("char1_test")
+}
+
+if (keyboard_check_pressed(vk_space)) {
+	textbox_skip()
+}

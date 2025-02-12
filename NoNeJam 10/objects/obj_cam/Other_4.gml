@@ -1,5 +1,4 @@
 
-
 view_enabled = true
 view_visible[0] = true
 
@@ -10,13 +9,18 @@ cam_limit = {
 	w : room_height - cam_h
 }
 
-
 var _cw = GAME_WID * scl.cam
 var _ch = GAME_HEI * scl.cam
 
 if (instance_exists(global.current_char)) {
 	follow_pos.x = global.current_char.x
 	follow_pos.y = global.current_char.y
+	
+	cam3d.pos.x = global.current_char.x
+	cam3d.pos.y = global.current_char.y
+			  
+	cam3d.to.x  = global.current_char.x
+	cam3d.to.y  = global.current_char.y
 }
 	
 x = (follow_pos.x + follow_offset.x) - cam_w/2

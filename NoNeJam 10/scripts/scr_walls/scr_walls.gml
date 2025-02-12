@@ -42,8 +42,9 @@ function tile_solidify(tile_layer, wall_obj, wall_yoff = 0, wall_depth = 0) {
             
                 if (!next_tile) {
                     has_adjacent = false;
-                    var inst = instance_create_depth(strip_start_xx, yy + wall_yoff, _wall_depth, _wall_obj);
-                    inst.image_xscale = strip_count;
+                    var inst = instance_create_depth(strip_start_xx, yy + wall_yoff, _wall_depth, _wall_obj, {
+						image_xscale : strip_count
+					});
                     strip_count = 0;
                 }
             }

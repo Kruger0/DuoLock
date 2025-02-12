@@ -27,8 +27,8 @@ function get_key_inputs() {
 		k_select	= input_check_pressed("select")
 		k_start		= input_check_pressed("start")
 		
-		m_left_p	= mouse_check_button_pressed(mb_left)
-		m_left_r	= mouse_check_button_released(mb_left)
+		m_left_p	= 0//mouse_check_button_pressed(mb_left)
+		m_left_r	= 0//mouse_check_button_released(mb_left)
 	} else {
 		init_inputs()
 	}
@@ -98,7 +98,7 @@ function menu_draw() {
 		var _yscal = _op_data[OpData.YScale]
 	
 		// draw options
-		scribble(_str).blend(_c, 1).transform(_xscal, _yscal).align(0, 1).draw(_xx, _yy)	
+		scribble(_str).blend(_c, 1).transform(_xscal*2, _yscal*2).align(0, 1).draw(_xx, _yy)	
 	
 		// sound and sliders
 		if (menu_level == 2 && i < 3) {
@@ -112,7 +112,7 @@ function menu_draw() {
 			var _slider_h = 16
 			var _slider_scl = 2
 		
-			scribble(_volume).blend(_c, 1).transform(_xscal, _yscal).align(0, 1).draw(_slider_x + 170, _yy)
+			scribble(_volume).blend(_c, 1).transform(_xscal*2, _yscal*2).align(0, 1).draw(_slider_x + 190, _yy)
 		
 			matrix_set(matrix_world, matrix_build(_slider_x, _slider_y, 0, 0, 0, 0, _slider_scl, _slider_scl, 1))
 				draw_sprite_stretched_ext(spr_slider, 0, 0, 0, _slider_w, _slider_h, c_menu_off, 1)
@@ -126,7 +126,7 @@ function menu_draw() {
 			var _opx = op_x + 240
 			switch (i) {
 				case 0: {
-					scribble(window_get_fullscreen() ? "Ligado" : "Desligado").blend(_c, 1).transform(_op_data[OpData.XScale], _op_data[OpData.YScale]).align(0, 1).draw(_opx, _yy)
+					scribble(window_get_fullscreen() ? "Ligado" : "Desligado").blend(_c, 1).transform(_op_data[OpData.XScale]*2, _op_data[OpData.YScale]*2).align(0, 1).draw(_opx, _yy)
 				}
 				break;
 			
@@ -135,8 +135,8 @@ function menu_draw() {
 	
 		// arrow
 		if (_selec) {
-			var _arrow_scl = 1
-			draw_sprite_ext(spr_arrow_r, 0, _xx - 12, _yy - 1, _arrow_scl, _arrow_scl, 0, -1, 1)
+			var _arrow_scl = 1.2
+			draw_sprite_ext(spr_arrow_r, 0, _xx - 12, _yy + 2, _arrow_scl, _arrow_scl, 0, -1, 1)
 		}	
 	}
 }

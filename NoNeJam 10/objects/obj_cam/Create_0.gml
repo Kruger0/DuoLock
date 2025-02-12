@@ -1,16 +1,21 @@
 
 
+//==============================// 3D //=================================
+cam3d = new Camera3D(x, y + 100, -80, x, y, 0, 0, 1, 0, 80, 16/9, 1, 1000)
+gpu_set_zwriteenable(true)
+gpu_set_ztestenable(true)
+gpu_set_alphatestenable(true)
+
 //application_surface_draw_enable(false)
 cam = view_camera[0]
 angle = 0
 
 scl = {
-	cam : 0.5,
+	cam : 1,
 	gui : 1,
-	win	: 2,
+	win	: 3,
 	aps	: 3,
 }
-
 
 asp_ratio = GAME_WID/ GAME_HEI
 cam_w = GAME_WID * scl.cam

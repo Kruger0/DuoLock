@@ -29,8 +29,8 @@ options[3] = [
 menu_level = 0
 selection = 0
 
-op_sep = 26
-op_x = GUI_WID*0.06
+op_sep = 32
+op_x = GUI_WID*0.1
 op_y = GUI_HEI*0.45
 op_length = array_length(options[menu_level])
 op_scl_base = 1

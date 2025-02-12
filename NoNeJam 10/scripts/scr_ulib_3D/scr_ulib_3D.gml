@@ -1,4 +1,4 @@
-
+/*
 // Default vertex format used bu ULib-GM. TODO: make it private
 vertex_format_begin()
 vertex_format_add_position_3d()

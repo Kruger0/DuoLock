@@ -1,6 +1,5 @@
 
 global.seed = random_get_seed()
-surface_depth_disable(true)
 
 
 #macro DEVMODE			false
@@ -8,8 +7,8 @@ surface_depth_disable(true)
 
 #macro DEBUG			global.debug
 #macro DEBUG_KEY		vk_f9
-#macro GAME_WID			640
-#macro GAME_HEI			360
+#macro GAME_WID			480
+#macro GAME_HEI			270
 #macro GRID				16
 #macro ROOM_SPEED		game_get_speed(gamespeed_fps)
 #macro ROOM_NAME		global.room_name
