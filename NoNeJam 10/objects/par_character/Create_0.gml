@@ -3,7 +3,7 @@ event_inherited()
 // ============================================= Variables
 
 walk_spd		= 1
-acel			= 0.4
+acel			= 0.25
 facing			= 1
 angle			= 0
 
@@ -12,10 +12,27 @@ dust_time		= 0
 
 moving			= false
 last_dir		= 0
+velz = 0
+grav = 1.5
 
 // ============================================= Methods
 
-get_inputs = function() {
+stomp_time = 0
+
+take_dmg = function() {
+	stomp_time = max(stomp_time-1, 0)
+	
+	if (place_meeting(x, y, dmg_source)) {
+		stomp_time = 40
+		vel.x += -vel.x*6
+		vel.y += -vel.y*6
+		scale.x = 0.8
+		scale.y = 1.2;
+		velz += 2
+	}
+}
+
+get_inputs = function() {	
 	
 	k_up		= input_check("up")
 	k_left		= input_check("left")
@@ -38,8 +55,8 @@ movement = function() {
 	walk_dir = point_direction(0, 0, k_right - k_left, k_down - k_up)
 	
 	// Movimento
-	var _hor_vec = dcos(walk_dir) * walk_spd
-	var _ver_vec = -dsin(walk_dir) * walk_spd
+	var _hor_vec = stomp_time ? 0 : dcos(walk_dir) * walk_spd
+	var _ver_vec = stomp_time ? 0 : -dsin(walk_dir) * walk_spd
 	if ((k_right ^^ k_left) || (k_down ^^ k_up)) {
 		vel.x = lerp(vel.x, _hor_vec, acel)
 		vel.y = lerp(vel.y, _ver_vec, acel)
@@ -78,7 +95,7 @@ movement = function() {
 }
 
 interact = function() {
-	var _interacs = [obj_lever_red, obj_lever_blue]
+	var _interacs = [obj_lever_red, obj_lever_blue, obj_lever_green, obj_lever_yellow]
 	var _list = ds_list_create()
 	var _col = collision_circle_list(x, y, 4, _interacs, false, true, _list, true)
 	if (_col) {

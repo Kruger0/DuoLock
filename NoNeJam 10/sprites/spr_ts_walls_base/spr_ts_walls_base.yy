@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Solid",
-    "path":"folders/Sprites/Scenario/Solid.yy",
+    "name":"Tilesets",
+    "path":"folders/Sprites/Scenario/Tilesets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

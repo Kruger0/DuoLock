@@ -3,6 +3,9 @@ vel			= new Vector2(0)
 scale		= new Vector2(1)
 angle		= 0
 
+velz		= 0
+z			= 0
+stomp_time = 0
 
 collision = function() {
 	var _velh = max(1, abs(vel.x)) * sign(vel.x);

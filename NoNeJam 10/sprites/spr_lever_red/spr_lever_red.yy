@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":3,
   "parent":{
-    "name":"Interactibles",
-    "path":"folders/Sprites/Scenario/Interactibles.yy",
+    "name":"Red",
+    "path":"folders/Sprites/Scenario/Interactibles/Red.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

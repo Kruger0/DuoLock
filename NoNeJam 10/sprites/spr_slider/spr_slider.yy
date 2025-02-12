@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Interface",
-    "path":"folders/Sprites/Interface.yy",
+    "name":"Menu",
+    "path":"folders/Sprites/Interface/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

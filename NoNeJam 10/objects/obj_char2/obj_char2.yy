@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"obj_char2",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_character","path":"objects/par_character/par_character.yy",},"propertyId":{"name":"dmg_source","path":"objects/par_character/par_character.yy",},"resource":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_water",},
+  ],
   "parent":{
     "name":"Entities",
     "path":"folders/Objects/Entities.yy",

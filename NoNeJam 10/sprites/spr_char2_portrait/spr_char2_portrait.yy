@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Interface",
-    "path":"folders/Sprites/Interface.yy",
+    "name":"Dialog",
+    "path":"folders/Sprites/Interface/Dialog.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

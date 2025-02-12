@@ -61,7 +61,7 @@ gpu_set_texrepeat(false)
 var _depth = gpu_get_depth()
 gpu_set_depth(z-16)
 
-draw_sprite_ext(spr_door_top, 0, x, y- (yy - global.yoff), image_xscale, image_yscale, 0, -1, 1)
+draw_sprite_ext(spr_top, 0, x, y- (yy - global.yoff), image_xscale, image_yscale, 0, -1, 1)
 gpu_set_depth(_depth)
 
 
