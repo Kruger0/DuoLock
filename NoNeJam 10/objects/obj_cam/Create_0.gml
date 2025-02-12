@@ -5,6 +5,7 @@ cam3d = new Camera3D(x, y + 100, -80, x, y, 0, 0, 1, 0, 80, 16/9, 1, 1000)
 gpu_set_zwriteenable(true)
 gpu_set_ztestenable(true)
 gpu_set_alphatestenable(true)
+gpu_set_alphatestref(0.5)
 
 //application_surface_draw_enable(false)
 cam = view_camera[0]

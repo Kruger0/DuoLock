@@ -6,4 +6,5 @@ function toggle_fullscreen() {
 		window_set_fullscreen(true)
 		//surface_resize(application_surface, 1920, 1080)
 	}
+	global.gamedata.video.fullscreen = window_get_fullscreen()
 }

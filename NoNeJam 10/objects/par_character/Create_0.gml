@@ -21,6 +21,7 @@ get_inputs = function() {
 	k_left		= input_check("left")
 	k_down		= input_check("down")
 	k_right		= input_check("right")
+	k_interact	= input_check_pressed("interact")
 	
 	var _fac_prev = facing
 	facing = (k_right - k_left != 0 ? k_right - k_left : facing)
@@ -57,10 +58,15 @@ movement = function() {
 			dust_time = dust_delay
 			var _rrx = 2
 			var _rry = 1
-			if (chance(30)) {
+			if (chance(20)) {
 				var _rx = random_range(-_rrx, _rrx)
 				var _ry = random_range(-_rry, _rry)
-				ember_part_create(x + _rx, y + _ry, EmberType.Walk)
+				//ember_part_create(x + _rx, y + _ry, EmberType.Walk)
+				with (part_create(x + _rx, y + _ry, 0)) {
+					sprite_index = spr_dust
+					image_blend = choose(#FFFFFF, #DDDDDD, #BBBBBB)
+					scale = 0.4
+				}
 			}
 		}
 		moving = true
@@ -70,3 +76,39 @@ movement = function() {
 		moving = false
 	}
 }
+
+interact = function() {
+	var _list = ds_list_create()
+	var _col = collision_circle_list(x, y, 4, obj_lever, false, true, _list, true)
+	if (_col) {
+		var _inst = _list[|0]
+		with (_inst) {
+			show_outline = true
+			if (other.k_interact) {
+				_inst.state = !_inst.state
+				_inst.scl = 1.2
+			}
+		}
+	}
+	ds_list_destroy(_list)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

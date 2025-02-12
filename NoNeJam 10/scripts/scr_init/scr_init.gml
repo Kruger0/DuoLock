@@ -27,7 +27,7 @@ global.seed = random_get_seed()
 #macro c_sunlight		#FFF0B0
 
 
-var KEEP_DATA = false;
+var KEEP_DATA = true;
 if (file_exists(FILE_SAVE) && KEEP_DATA) {
 	global.gamedata = json_load(FILE_SAVE)
 } else {
@@ -41,6 +41,11 @@ if (file_exists(FILE_SAVE) && KEEP_DATA) {
 	}	
 	json_save(global.gamedata, FILE_SAVE, FILE_ENCODED)
 }
+
+window_set_fullscreen(global.gamedata.video.fullscreen)
+audio_master_gain(global.gamedata.audio[0])
+audio_group_set_gain(audio_music, global.gamedata.audio[1], 0)
+audio_group_set_gain(audio_sfx, global.gamedata.audio[2], 0)
 
 enum Volume {
 	Master,

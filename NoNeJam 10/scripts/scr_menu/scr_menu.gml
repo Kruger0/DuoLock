@@ -104,7 +104,7 @@ function menu_draw() {
 		if (menu_level == 2 && i < 3) {
 			var _value = global.gamedata.audio[i]
 			var _volume = string("{0}%", ceil(_value*100))
-			var _xoff = 220		
+			var _xoff = 160	
 		
 			var _slider_x = op_x + _xoff
 			var _slider_y = _yy - 17
@@ -129,7 +129,6 @@ function menu_draw() {
 					scribble(window_get_fullscreen() ? "Ligado" : "Desligado").blend(_c, 1).transform(_op_data[OpData.XScale]*2, _op_data[OpData.YScale]*2).align(0, 1).draw(_opx, _yy)
 				}
 				break;
-			
 			}		
 		}
 	
@@ -167,7 +166,7 @@ function menu_input_process() {
 
 function interface_process() {
 	get_key_inputs()
-	get_mouse_input()
+	//get_mouse_input()
 	menu_input_process()
 }
 

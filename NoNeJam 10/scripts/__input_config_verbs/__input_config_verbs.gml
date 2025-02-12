@@ -22,6 +22,7 @@ function __input_config_verbs()
             
             jump:	input_binding_key(vk_space),
             back:	input_binding_key(vk_backspace),
+            interact:	input_binding_key("E"),
             select:	input_binding_key(vk_enter),
             start:	input_binding_key(vk_escape),
         },

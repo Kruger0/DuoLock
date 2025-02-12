@@ -7,6 +7,7 @@ if (vb_wall == -1) {
 	
 	var _offset = -6
 	var _c = #404060
+	_c = #808080
 
 	vertex_begin(vb_wall, global.vform)
 

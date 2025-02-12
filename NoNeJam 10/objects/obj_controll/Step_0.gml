@@ -1,9 +1,8 @@
 
-
 GAME_TIME += 16.67
 
-
-if (keyboard_check_pressed(ord("F"))) {
+// Troca de personagem
+if (!textbox_exists() && keyboard_check_pressed(ord("F"))) {
 	
 	with (global.current_char) {
 		scale.y *= 0.8
@@ -18,9 +17,9 @@ if (keyboard_check_pressed(ord("F"))) {
 	}
 }
 
-if (keyboard_check_pressed(ord("E"))) {
-	textbox_create("char1_test")
-}
+//if (keyboard_check_pressed(ord("E"))) {
+//	textbox_create("char1_test")
+//}
 
 if (keyboard_check_pressed(vk_space)) {
 	textbox_skip()

@@ -20,10 +20,8 @@
 function __textbox_actors() {
 	static actors = {	
 		system:		new TextboxActor("", undefined, snd_dialog_1, 1),
-	
-		char1:		new TextboxActor("[#2020FF]Char 1[/c]", spr_char1_portrait, snd_dialog_1, 1),	
-		
-		char2:		new TextboxActor("[#FF2020]Char 2[/c]", spr_char2_portrait, snd_dialog_1, 1),	
+		char1:		new TextboxActor("[#2020FF]Char 1[/c]", spr_char1_portrait, snd_dialog_1, 0.9),	
+		char2:		new TextboxActor("[#FF2020]Char 2[/c]", spr_char2_portrait, snd_dialog_1, 1.1),
 	};
 
 	return actors;

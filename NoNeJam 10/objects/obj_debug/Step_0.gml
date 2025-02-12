@@ -1,5 +1,4 @@
 
-
 if (DEVMODE && keyboard_check_pressed(DEBUG_KEY)) {
 	
 	if (DEBUG) {
