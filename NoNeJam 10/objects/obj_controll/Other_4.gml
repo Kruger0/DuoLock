@@ -1,6 +1,9 @@
 
 if (string_letters(room_get_name(room)) == "rmlevel") {
-	tile_solidify("tile_walls", par_solid)
+	var _layer = "tile_walls"
+	var _lay_id = layer_get_id(_layer)
+	tilemap_y(layer_tilemap_get_id(_lay_id), global.yoff)
+	tile_solidify(_layer, obj_wall)
 }
 
 if (instance_exists(obj_char1) && instance_exists(obj_char2)) {

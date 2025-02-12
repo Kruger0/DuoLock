@@ -1,7 +1,7 @@
 
 
 //==============================// 3D //=================================
-cam3d = new Camera3D(x, y + 100, -80, x, y, 0, 0, 1, 0, 80, 16/9, 1, 1000)
+cam3d = new Camera3D(x, y + 100, -70, x, y, 0, 0, 1, 0, 80, 16/9, 1, 1000)
 gpu_set_zwriteenable(true)
 gpu_set_ztestenable(true)
 gpu_set_alphatestenable(true)

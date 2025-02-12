@@ -8,8 +8,8 @@
   "name":"obj_grass",
   "overriddenProperties":[],
   "parent":{
-    "name":"Scenario",
-    "path":"folders/Objects/Scenario.yy",
+    "name":"Props",
+    "path":"folders/Objects/Scenario/Props.yy",
   },
   "parentObjectId":{
     "name":"par_prop",

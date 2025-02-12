@@ -3,5 +3,5 @@ event_inherited();
 
 spr = {
 	idle : spr_char1_idle,
-	run : spr_char1_run
+	run : spr_char1_run,
 }

@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Char 2",
-    "path":"folders/Sprites/Entities/Char 2.yy",
+    "name":"Interface",
+    "path":"folders/Sprites/Interface.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

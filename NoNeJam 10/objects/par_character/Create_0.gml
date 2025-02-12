@@ -21,7 +21,7 @@ get_inputs = function() {
 	k_left		= input_check("left")
 	k_down		= input_check("down")
 	k_right		= input_check("right")
-	k_interact	= input_check_pressed("interact")
+	k_interact	= input_check_pressed("action")
 	
 	var _fac_prev = facing
 	facing = (k_right - k_left != 0 ? k_right - k_left : facing)
@@ -78,8 +78,9 @@ movement = function() {
 }
 
 interact = function() {
+	var _interacs = [obj_lever_red, obj_lever_blue]
 	var _list = ds_list_create()
-	var _col = collision_circle_list(x, y, 4, obj_lever, false, true, _list, true)
+	var _col = collision_circle_list(x, y, 4, _interacs, false, true, _list, true)
 	if (_col) {
 		var _inst = _list[|0]
 		with (_inst) {

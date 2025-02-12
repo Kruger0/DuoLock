@@ -20,11 +20,13 @@ function __input_config_verbs()
             left:	[input_binding_key(vk_left),  input_binding_key("A")],
             right:	[input_binding_key(vk_right), input_binding_key("D")],
             
-            jump:	input_binding_key(vk_space),
             back:	input_binding_key(vk_backspace),
-            interact:	input_binding_key("E"),
-            select:	input_binding_key(vk_enter),
-            start:	input_binding_key(vk_escape),
+			select:	input_binding_key(vk_enter),
+			skip:	input_binding_key(vk_space),
+			
+            action: input_binding_key("E"),
+			change: input_binding_key("F"),
+			special: input_binding_key("Q"),
         },
         
         gamepad:
@@ -34,10 +36,12 @@ function __input_config_verbs()
             left:	[input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
             right:	[input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
 					
-            jump:	input_binding_gamepad_button(gp_face1),
             back:	input_binding_gamepad_button(gp_face2),
             select: input_binding_gamepad_button(gp_face1),
-            start:	input_binding_gamepad_button(gp_start),
+			
+			action	: input_binding_gamepad_button(gp_face3),
+			change	: input_binding_gamepad_button(gp_face2),
+			special	: input_binding_gamepad_button(gp_face4),
         },
         
         touch: {}

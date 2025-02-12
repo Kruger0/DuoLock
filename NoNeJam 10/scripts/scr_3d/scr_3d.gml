@@ -5,6 +5,7 @@ vertex_format_add_texcoord()
 global.vform = vertex_format_end()
 
 global.tilt = -70
+global.yoff = -6
 
 function vertex_add_point(_vbuff, _x, _y, _z, _u, _v, _col = c_white, _alpha = 1) {
 	vertex_position_3d(_vbuff, _x, _y, _z)

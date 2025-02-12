@@ -25,7 +25,6 @@ function get_key_inputs() {
 		
 		k_back		= input_check_pressed("back")
 		k_select	= input_check_pressed("select")
-		k_start		= input_check_pressed("start")
 		
 		m_left_p	= 0//mouse_check_button_pressed(mb_left)
 		m_left_r	= 0//mouse_check_button_released(mb_left)
