@@ -22,10 +22,16 @@ stomp_time = 0
 take_dmg = function() {
 	stomp_time = max(stomp_time-1, 0)
 	
-	if (place_meeting(x, y, dmg_source)) {
+	var _dmg = instance_place(x, y, dmg_source)
+	if (_dmg) {
 		stomp_time = 40
-		vel.x += -vel.x*6
-		vel.y += -vel.y*6
+		//var _dir = point_direction(x, y, _dmg.x + _dmg.sprite_width/2, _dmg.y + _dmg.sprite_height/2)
+		//var _back = new Vector2()
+		//print(_dir)
+		var _spd = 4
+		var _dir = new Vector2(vel.x, vel.y).Normalize()
+		vel.x -= _dir.x * _spd
+		vel.y -= _dir.y * _spd
 		scale.x = 0.8
 		scale.y = 1.2;
 		velz += 2

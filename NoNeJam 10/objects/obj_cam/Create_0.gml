@@ -115,6 +115,8 @@ screenshake_fx = function() {
 		shake_timestart = 0;
 		shake_magnitude = 0;
 		shake_rotation = 0
+		shake_xoff = 0
+		shake_yoff = 0
 	}
 	
 	// 2D

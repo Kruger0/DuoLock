@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
   "%Name":"obj_door_yellow",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_door_yellow",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_door","path":"objects/par_door/par_door.yy",},"propertyId":{"name":"door_color","path":"objects/par_door/par_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Yellow\"",},
+  ],
   "parent":{
     "name":"Interactibles",
     "path":"folders/Objects/Scenario/Interactibles.yy",
