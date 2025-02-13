@@ -29,6 +29,7 @@ take_dmg = function() {
 		scale.x = 0.8
 		scale.y = 1.2;
 		velz += 2
+		cam_fx_screenshake(60, 10, 5)
 	}
 }
 
@@ -49,7 +50,6 @@ get_inputs = function() {
 }
 
 get_inputs()
-
 
 movement = function() {
 	walk_dir = point_direction(0, 0, k_right - k_left, k_down - k_up)

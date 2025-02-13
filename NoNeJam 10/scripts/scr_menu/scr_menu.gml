@@ -117,7 +117,7 @@ function menu_draw() {
 				draw_sprite_stretched_ext(spr_slider, 0, 0, 0, _slider_w, _slider_h, c_menu_off, 1)
 				draw_sprite_stretched_ext(spr_slider, 0, 0, 0, _slider_w * _value, _slider_h, c_white, 1)
 				draw_sprite_stretched(spr_slider, 0, -4 + (_slider_w * _value), -1, 8, 18)
-			matrix_set(matrix_world, matrix_build_identity())
+			matrix_set(matrix_world, global.matrix_idendity)
 		}
 	
 		// video

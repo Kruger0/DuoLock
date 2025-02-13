@@ -20,8 +20,7 @@ if (!textbox_exists() && input_check_pressed("change")) {
 if (instance_exists(obj_char1_goal) && instance_exists(obj_char2_goal)) {
 	var _state = obj_char1_goal.state + obj_char2_goal.state
 	if (_state > 1) {
-		// goto_next_level()
-		print("passou de fase")
+		obj_cam.levelpass()
 	}
 }
 

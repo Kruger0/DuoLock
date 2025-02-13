@@ -1,4 +1,3 @@
-
 event_inherited()
 
 interact()
@@ -13,7 +12,4 @@ if (z >= 0) { // tá pra cima
 take_dmg()
 
 z = min(0, z - velz)
-
-
-
 

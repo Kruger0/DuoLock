@@ -55,7 +55,7 @@ if (vb_door == -1) {
 gpu_set_texrepeat(true)
 matrix_set(matrix_world, matrix_build(0, -yy, z, 0, 0, 0, 1, 1, 1))
 vertex_submit(vb_door, pr_trianglelist, tex_door)
-matrix_set(matrix_world, matrix_build_identity())
+matrix_set(matrix_world, global.matrix_idendity)
 gpu_set_texrepeat(false)
 
 var _depth = gpu_get_depth()

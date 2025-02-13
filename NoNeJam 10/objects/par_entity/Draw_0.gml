@@ -5,7 +5,7 @@ matrix_set(matrix_world, matrix_build(x, y, z, global.tilt, 0, 0, 1, 1, 1))
 	draw_sprite_ext(sprite_index, image_index, 0, 0, scale.x * facing, scale.y, angle, image_blend, stomp_time/40)
 	shader_reset()
 
-matrix_set(matrix_world, matrix_build_identity())
+matrix_set(matrix_world, global.matrix_idendity)
 
 
 if (DEBUG) {

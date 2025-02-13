@@ -1,20 +1,24 @@
 
+// 2D process
+
+if (keyboard_check_pressed(vk_f11)) {
+	toggle_fullscreen()
+}
 
 var _cw = GAME_WID * scl.cam
 var _ch = GAME_HEI * scl.cam
 
 
 if (instance_exists(global.current_char)) {
-	var _mouse_fac = 0.0
-	follow_pos.x = lerp(global.current_char.x, mouse_x, _mouse_fac)
-	follow_pos.y = lerp(global.current_char.y, mouse_y, _mouse_fac)
+	follow_pos.x = global.current_char.x
+	follow_pos.y = global.current_char.y
 }
 	
-x = (lerp(x, (follow_pos.x + follow_offset.x) - cam_w/2, follow_spd))
-y = (lerp(y, (follow_pos.y + follow_offset.y) - cam_h/2, follow_spd))
+//x = (lerp(x, (follow_pos.x + follow_offset.x) - cam_w/2, follow_spd))
+//y = (lerp(y, (follow_pos.y + follow_offset.y) - cam_h/2, follow_spd))
 
-x = clamp(x, cam_limit.x, cam_limit.z)
-y = clamp(y, cam_limit.y, cam_limit.w)
+//x = clamp(x, cam_limit.x, cam_limit.z)
+//y = clamp(y, cam_limit.y, cam_limit.w)
 
 screenshake_fx()
 

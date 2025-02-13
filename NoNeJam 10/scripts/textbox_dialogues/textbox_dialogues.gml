@@ -17,11 +17,29 @@ function __textbox_dialogues() {
 			events: [
 				[Dialog.Actor, ACTOR_CHAR1],
 				[Dialog.Text, "Vamo testar esse sistema de diálogo aqui?"],
-				[Dialog.Text, "Ao que indica tá tudo certo, vambora"],
 				
 				[Dialog.Actor, ACTOR_CHAR2],
-				[Dialog.Text, "Vamo testar esse sistema de diálogo aqui?"],
 				[Dialog.Text, "Ao que indica tá tudo certo, vambora"],
+			]
+		},
+		test : {
+			events: [
+				[Dialog.Actor, ACTOR_CHAR1],
+				[Dialog.Text, "O homem é feito de casa, ou a casa é feita de carne?"],
+			]
+		},
+		poison : {
+			events: [
+				[Dialog.Actor, ACTOR_CHAR1],
+				[Dialog.Text, "Ih rapaz, essa parte tá cheia de veneno. Eu é que não vou andar por aqui"],
+				[Dialog.Text, "Mas veneno não afeta robôs. Talvêz ele consiga passar por aqui"],
+			]
+		},
+		water : {
+			events: [
+				[Dialog.Actor, ACTOR_CHAR2],
+				[Dialog.Text, "Água detectada. Agente danoso. Possível dano interno. Buscando alternativas..."],
+				[Dialog.Text, "Diretríz recomendada: Contatar humano."],
 			]
 		}
 	}

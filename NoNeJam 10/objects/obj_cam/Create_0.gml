@@ -1,14 +1,23 @@
 
+cam = view_camera[0]
 
 //==============================// 3D //=================================
-cam3d = new Camera3D(x, y + 100, -70, x, y, 0, 0, 1, 0, 80, 16/9, 1, 1000)
+
+cam_fov = 80
+cam_yoff = 50
+cam_zoff = -70
+
+cam_ztarg = cam_zoff
+cam_ytarg = cam_yoff
+
+cam3d = new Camera3D(x, y + cam_ytarg, cam_ztarg, x, y, 0, 0, 1, 0, cam_fov, GAME_WID/GAME_HEI, 1, 1000)
+
 gpu_set_zwriteenable(true)
 gpu_set_ztestenable(true)
 gpu_set_alphatestenable(true)
 gpu_set_alphatestref(0.5)
 
-//application_surface_draw_enable(false)
-cam = view_camera[0]
+//==============================// 2D //=================================
 angle = 0
 
 scl = {
@@ -23,17 +32,12 @@ cam_w = GAME_WID * scl.cam
 cam_h = GAME_HEI * scl.cam
 cam_limit = {x:0, y:0, z:0, w:0}
 
-//surf_light = -1
-//ambient_light = #EFEFEF
-
-
 //==============================// Update //=================================
 
 window_set_size(GAME_WID*scl.win, GAME_HEI*scl.win)
 surface_resize(application_surface, GAME_WID*scl.aps, GAME_HEI*scl.aps)
 display_set_gui_size(GAME_WID*scl.gui, GAME_HEI*scl.gui)
 window_center()
-
 
 //==============================// Follow //=================================
 
@@ -79,7 +83,17 @@ tran_mask_uv		= sprite_get_uvs(spr_grayscale_transition, tran_type)
 tran_fake			= false
 tran_callback		= undefined
 
+level_goto_next = false
+level_delay = 0
+
+
 //==============================// Functions //=================================
+
+levelpass = function() {
+	level_goto_next = true
+	cam_ztarg = -20
+	cam_ytarg = 30
+}
 
 screenshake_fx = function() {
 	shake_time = max(shake_time-1, 0);
@@ -102,9 +116,17 @@ screenshake_fx = function() {
 		shake_magnitude = 0;
 		shake_rotation = 0
 	}
+	
+	// 2D
 	x += shake_xoff;
 	y += shake_yoff;
 	angle += shake_angoff;
+	
+	// 3D
+	cam3d.to.x += shake_xoff;
+	cam3d.to.y += shake_yoff;
+	cam3d.to.z += (shake_yoff + shake_xoff) / 2;
+	
 }
 
 
