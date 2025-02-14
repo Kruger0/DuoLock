@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_door_blue",
-    "path":"sprites/spr_door_blue/spr_door_blue.yy",
+    "name":"spr_door_blue_top",
+    "path":"sprites/spr_door_blue_top/spr_door_blue_top.yy",
   },
   "spriteMaskId":null,
   "visible":true,

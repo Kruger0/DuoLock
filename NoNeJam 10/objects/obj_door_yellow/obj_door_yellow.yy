@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_door_yellow",
-    "path":"sprites/spr_door_yellow/spr_door_yellow.yy",
+    "name":"spr_door_yellow_top",
+    "path":"sprites/spr_door_yellow_top/spr_door_yellow_top.yy",
   },
   "spriteMaskId":null,
   "visible":true,
