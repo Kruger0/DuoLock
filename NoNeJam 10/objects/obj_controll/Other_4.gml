@@ -7,6 +7,8 @@ if (string_letters(room_get_name(room)) == "rmlevel") {
 	tile_solidify(_layer, obj_wall)
 	tile_liquidify("tile_water", obj_water)
 	tile_liquidify("tile_poison", obj_poison)
+	
+	layer_set_visible(layer_get_id("grid"), false)
 }
 
 if (instance_exists(obj_char1) && instance_exists(obj_char2)) {

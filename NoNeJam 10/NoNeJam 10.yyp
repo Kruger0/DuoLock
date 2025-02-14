@@ -732,6 +732,7 @@
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
     {"id":{"name":"spr_liquid","path":"sprites/spr_liquid/spr_liquid.yy",},},
     {"id":{"name":"spr_noise","path":"sprites/spr_noise/spr_noise.yy",},},
+    {"id":{"name":"spr_open_dialog","path":"sprites/spr_open_dialog/spr_open_dialog.yy",},},
     {"id":{"name":"spr_pixel","path":"sprites/spr_pixel/spr_pixel.yy",},},
     {"id":{"name":"spr_shadow","path":"sprites/spr_shadow/spr_shadow.yy",},},
     {"id":{"name":"spr_slider","path":"sprites/spr_slider/spr_slider.yy",},},

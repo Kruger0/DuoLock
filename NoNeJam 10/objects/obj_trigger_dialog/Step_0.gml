@@ -1,5 +1,7 @@
 
-if (place_meeting(x, y, character)) {
-	textbox_create(dialog_key)
-	instance_destroy()
+if (automatic || input_check_pressed("action")) {
+	if (place_meeting(x, y, character)) {
+		textbox_create(dialog_key)
+		instance_destroy()
+	}
 }

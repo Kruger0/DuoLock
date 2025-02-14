@@ -6,3 +6,5 @@ dbg_slider(ref_create(obj_cam, "cam_ytarg"), -200, 200)
 dbg_slider(ref_create(global, "tilt"), 0, -180)
 
 show_debug_overlay(false)
+
+room_tp = false

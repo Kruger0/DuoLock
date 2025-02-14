@@ -10,11 +10,11 @@
 			//Default Settings  -  Change them if you want.
 			config: {
 				line_width		: 1.0,		// line_width
-				line_col		: #000000,	// line_col
+				line_col		: #FFFFFF,	// line_col
 				line_alpha		: 1.0,		// line_alpha
 				tolerance		: 0.0,		// tolerance
 				resolution		: 1.0,		// resolution
-				roundness		: 0.0,		// roundness
+				roundness		: 1.0,		// roundness
 				uv_bound_mode	: true,		// uv_bound_mode
 			},
 	
