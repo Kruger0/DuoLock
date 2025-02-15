@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_ts_props",
-    "path":"sprites/spr_ts_props/spr_ts_props.yy",
+    "name":"spr_ts_floor",
+    "path":"sprites/spr_ts_floor/spr_ts_floor.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
