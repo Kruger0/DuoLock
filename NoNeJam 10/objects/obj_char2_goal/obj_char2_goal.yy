@@ -12,8 +12,8 @@
   "name":"obj_char2_goal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interactibles",
-    "path":"folders/Objects/Scenario/Interactibles.yy",
+    "name":"Goal",
+    "path":"folders/Objects/Scenario/Goal.yy",
   },
   "parentObjectId":null,
   "persistent":false,

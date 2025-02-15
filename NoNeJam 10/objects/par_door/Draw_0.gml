@@ -13,21 +13,21 @@ if (vb_door == -1) {
 
 	// north
 	vertex_add_point(vb_door, x, y + _offset, -16, 0, 0)
-	vertex_add_point(vb_door, x + _sw, y + _offset, -16, 1, 0)
+	vertex_add_point(vb_door, x + _sw, y + _offset, -16, image_xscale, 0)
 	vertex_add_point(vb_door, x, y, 0, 0, 1, _c)
 
-	vertex_add_point(vb_door, x + _sw, y + _offset, -16, 1, 0)
+	vertex_add_point(vb_door, x + _sw, y + _offset, -16, image_xscale, 0)
 	vertex_add_point(vb_door, x, y, 0, 0, 1, _c)
-	vertex_add_point(vb_door, x + _sw, y, 0, 1, 1, _c)
+	vertex_add_point(vb_door, x + _sw, y, 0, image_xscale, 1, _c)
 
 	// east
 	vertex_add_point(vb_door, x + _sw, y + _offset, -16, 0, 0)
-	vertex_add_point(vb_door, x + _sw, y + _sh + _offset, -16, 1, 0)
+	vertex_add_point(vb_door, x + _sw, y + _sh + _offset, -16, image_yscale, 0)
 	vertex_add_point(vb_door, x + _sw, y, 0, 0, 1, _c)
 
-	vertex_add_point(vb_door, x + _sw, y + _sh + _offset, -16, 1, 0)
+	vertex_add_point(vb_door, x + _sw, y + _sh + _offset, -16, image_yscale, 0)
 	vertex_add_point(vb_door, x + _sw, y, 0, 0, 1, _c)
-	vertex_add_point(vb_door, x + _sw, y + _sh, 0, 1, 1, _c)
+	vertex_add_point(vb_door, x + _sw, y + _sh, 0, image_yscale, 1, _c)
 
 	// south
 	vertex_add_point(vb_door, x, y + _sh + _offset, -16, 0, 0)
@@ -40,12 +40,12 @@ if (vb_door == -1) {
 
 	// west
 	vertex_add_point(vb_door, x, y + _offset, -16, 0, 0)
-	vertex_add_point(vb_door, x, y + _offset + _sh, -16, 1, 0)
+	vertex_add_point(vb_door, x, y + _offset + _sh, -16, image_yscale, 0)
 	vertex_add_point(vb_door, x, y, 0, 0, 1, _c)
 
-	vertex_add_point(vb_door, x, y + _offset + _sh, -16, 1, 0)
+	vertex_add_point(vb_door, x, y + _offset + _sh, -16, image_yscale, 0)
 	vertex_add_point(vb_door, x, y, 0, 0, 1, _c)
-	vertex_add_point(vb_door, x, y + _sh, 0, 1, 1, _c)
+	vertex_add_point(vb_door, x, y + _sh, 0, image_yscale, 1, _c)
 
 	vertex_end(vb_door)
 	vertex_freeze(vb_door)

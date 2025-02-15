@@ -9,7 +9,7 @@ if (vb_wall == -1) {
 	var _c = #404060
 	_c = #808080
 	var _uoff = 0.5
-
+	var _u = image_xscale
 	vertex_begin(vb_wall, global.vform)
 
 	// north
@@ -24,7 +24,7 @@ if (vb_wall == -1) {
 	// east														
 	vertex_add_point(vb_wall, x + _sw, y + _offset, -16,		0 + _uoff, 0)
 	vertex_add_point(vb_wall, x + _sw, y + _sh + _offset, -16,	1 + _uoff, 0)
-	vertex_add_point(vb_wall, x + _sw, y, 0,					0 + _uoff, 1, _c)
+	vertex_add_point(vb_wall, x + _sw, y, 0,					0 + _uoff, image_yscale, _c)
 																
 	vertex_add_point(vb_wall, x + _sw, y + _sh + _offset, -16,	1 + _uoff, 0)
 	vertex_add_point(vb_wall, x + _sw, y, 0,					0 + _uoff, 1, _c)

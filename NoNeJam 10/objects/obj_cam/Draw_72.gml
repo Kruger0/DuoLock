@@ -1,6 +1,5 @@
 
 // 3D process
-
 if (string_letters(room_get_name(room)) == "rmlevel") {
 	draw_clear_alpha(0, 0)
 
@@ -38,3 +37,4 @@ if (string_letters(room_get_name(room)) == "rmlevel") {
 
 	cam3d.Apply()
 }
+
