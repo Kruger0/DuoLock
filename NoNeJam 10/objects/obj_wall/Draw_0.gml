@@ -1,4 +1,5 @@
 
+
 if (vb_wall == -1) {
 	vb_wall = vertex_create_buffer()
 
