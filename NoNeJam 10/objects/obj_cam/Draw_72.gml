@@ -9,7 +9,7 @@ if (string_letters(room_get_name(room)) == "rmlevel") {
 		
 		level_delay++
 		if (level_delay > 60) {
-			cam_tran_start(room_next(room), 0, 1, c_black, function() {
+			cam_tran_start(room_next(room), 0, , c_black, function() {
 				obj_cam.level_delay = 0
 				obj_cam.level_goto_next = false
 				cam_ztarg = cam_zoff

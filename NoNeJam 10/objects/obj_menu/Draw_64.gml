@@ -17,7 +17,7 @@ switch (menu_level) {
 		switch (selection) {
 			case 0: {
 				if (k_select) {					
-					cam_tran_start(rm_level_1, 0, 0.7)
+					cam_tran_start(rm_level_1)
 				}
 			}
 			break;

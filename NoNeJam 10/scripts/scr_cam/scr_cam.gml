@@ -16,7 +16,7 @@ function cam_fx_screenshake(duration, _speed, hor_mag, ver_mag = hor_mag, rotati
 }
 
 
-function cam_tran_start(destiny, type = 0, spd = 0.25, col = c_black, _callback = function(){}) {
+function cam_tran_start(destiny, type = 0, spd = 0.7, col = c_black, _callback = function(){}) {
 	if (obj_cam.tran_state != TranStt.Idle) {
 		return;
 	}

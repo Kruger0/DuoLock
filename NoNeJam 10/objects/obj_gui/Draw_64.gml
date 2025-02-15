@@ -26,12 +26,21 @@ if (string_letters(room_get_name(room)) == "rmlevel") {
 			col_scl[i][1] = 1.5
 		}
 
-		var _hei = _line * 18
-		var _x = 16
-		var _y = 16
-		draw_sprite_ext(_spr[i], _result, _x, _y + _hei, col_scl[i][0], col_scl[i][0], 0, -1, 1)
-		scribble(_result ? "ON" : "OFF").blend(_result ? c_menu_on : c_menu_off).align(0, 1).draw((col_scl[i][0]-1)*8 + _x + 10, _y - 1 + _hei)
+		var _scl = 1.0
+		var _alpha = _result ? 1 : 0.5
+		var _hei = _line * 18 * _scl
+		var _x = 16 * _scl
+		var _y = 16 * _scl
+		var _xsep = 10 * _scl
+		var _xanim = 8 * _scl
+		
+		draw_sprite_ext(_spr[i], _result, _x, _y + _hei, _scl*col_scl[i][0], _scl*col_scl[i][0], 0, -1, _alpha)
+		scribble(_result ? "ON" : "OFF").transform(_scl, _scl).blend(_result ? c_menu_on : c_menu_off, _alpha).align(0, 1).draw((col_scl[i][0]-1)*_xanim + _x + _xsep, _y - 1 + _hei)
 		_line++
 	}
+	
+	// ==========================================================
+	
+	
 }
 
