@@ -2,8 +2,8 @@ event_inherited()
 
 // ============================================= Variables
 
-walk_spd		= 1
-acel			= 0.25
+walk_spd		= 1.1
+acel			= 0.2
 facing			= 1
 angle			= 0
 
@@ -21,22 +21,61 @@ stomp_time = 0
 
 take_dmg = function() {
 	stomp_time = max(stomp_time-1, 0)
-	
-	var _dmg = instance_place(x, y, dmg_source)
+	var _list = ds_list_create()
+	var _dmg = collision_circle_list(x, y, GRID*2, dmg_source, true, true, _list, false)
 	if (_dmg) {
-		stomp_time = 40
-		//var _dir = point_direction(x, y, _dmg.x + _dmg.sprite_width/2, _dmg.y + _dmg.sprite_height/2)
-		//var _back = new Vector2()
-		//print(_dir)
-		var _spd = 4
-		var _dir = new Vector2(vel.x, vel.y).Normalize()
-		vel.x -= _dir.x * _spd
-		vel.y -= _dir.y * _spd
-		scale.x = 0.8
-		scale.y = 1.2;
-		velz += 2
-		cam_fx_screenshake(60, 10, 5)
+		print(_dmg)
+		// Get mean
+		var _mx = 0
+		var _my = 0
+		for (var i = 0; i < _dmg; i++) {
+			var _inst = _list[| i]
+			_mx += _inst.x + _inst.sprite_width/2
+			_my += _inst.y + _inst.sprite_height/2
+		}
+		_mx /= _dmg
+		_my /= _dmg
+		
+		var _col = instance_place(x, y, dmg_source)
+		if (_col && !stomp_time) {
+			stomp_time = 40
+			var _dir = point_direction(_mx, _my, x, y)
+			//print(_dir, _dir div 90)
+			////var _back = new Vector2()
+			//print(_dir)
+		
+			var _spd = 3
+			var _vec = new Vector2().SetDirection(_dir)
+			print(_vec.ToString())
+		
+			vel.x += _vec.x * _spd
+			vel.y += _vec.y * _spd
+			scale.x = 0.8
+			scale.y = 1.2;
+			velz += _spd*0.6
+			cam_fx_screenshake(60, 10, 5)
+		}
 	}
+	//var _dmg = 
+	//if (_dmg && !stomp_time) {
+	//	stomp_time = 40
+	//	//var _dir = point_direction(x, y, _dmg.x + _dmg.sprite_width/2, _dmg.y + _dmg.sprite_height/2) + 45
+	//	//print(_dir, _dir div 90)
+	//	////var _back = new Vector2()
+	//	////print(_dir)
+		
+	//	var _spd = 1
+	//	var _side = new Vector2(x > _dmg.x + _dmg.sprite_width/2, y > _dmg.y + _dmg.sprite_width/2)
+	//	var _dir = new Vector2(vel.x, vel.y).Normalize()
+		
+	//	vel.x -= _dir.x * _spd
+	//	vel.y -= _dir.y * _spd
+	//	scale.x = 0.8
+	//	scale.y = 1.2;
+	//	velz += _spd*0.6
+	//	cam_fx_screenshake(60, 10, 5)
+	//}
+	ds_list_destroy(_list)
 }
 
 get_inputs = function() {	

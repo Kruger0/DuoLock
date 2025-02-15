@@ -3,7 +3,7 @@
 if (string_letters(room_get_name(room)) == "rmlevel") {
 	draw_clear_alpha(0, 0)
 
-	var _acel = 0.1
+	var _acel = 0.075
 
 	if (level_goto_next) {
 		

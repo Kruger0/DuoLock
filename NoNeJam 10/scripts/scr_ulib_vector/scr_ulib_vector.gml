@@ -116,8 +116,14 @@ function Vector2(_x = 0, _y = _x) constructor {
 	}	
 	static SetDirection = function(_dir) {
 		var _mag = GetMagnitude()
-		x = dcos(_dir) * _mag
-		y = -dsin(_dir) * _mag
+		if (_mag == 0) {
+			x = dcos(_dir)
+			y = -dsin(_dir)
+		} else {
+			x = dcos(_dir) * _mag
+			y = -dsin(_dir) * _mag
+		}		
+		return self
 	}
 	static LimitMagnitude = function(_limit) {
 		if (GetMagnitude() > _limit) {

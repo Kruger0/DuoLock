@@ -4,8 +4,8 @@ cam = view_camera[0]
 //==============================// 3D //=================================
 
 cam_fov = 80
-cam_yoff = 50
-cam_zoff = -70
+cam_yoff = 60
+cam_zoff = -90
 
 cam_ztarg = cam_zoff
 cam_ytarg = cam_yoff
@@ -16,6 +16,8 @@ gpu_set_zwriteenable(true)
 gpu_set_ztestenable(true)
 gpu_set_alphatestenable(true)
 gpu_set_alphatestref(0.5)
+
+display_reset(8, true)
 
 //==============================// 2D //=================================
 angle = 0
@@ -35,9 +37,15 @@ cam_limit = {x:0, y:0, z:0, w:0}
 //==============================// Update //=================================
 
 window_set_size(GAME_WID*scl.win, GAME_HEI*scl.win)
-surface_resize(application_surface, GAME_WID*scl.aps, GAME_HEI*scl.aps)
 display_set_gui_size(GAME_WID*scl.gui, GAME_HEI*scl.gui)
 window_center()
+if (global.gamedata.video.fullscreen) {
+	window_set_fullscreen(true)
+	surface_resize(application_surface, display_get_width(), display_get_height())
+} else {
+	window_set_fullscreen(false)
+	surface_resize(application_surface, GAME_WID*scl.aps, GAME_HEI*scl.aps)
+}
 
 //==============================// Follow //=================================
 

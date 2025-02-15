@@ -12,8 +12,8 @@
   "name":"obj_cam",
   "overriddenProperties":[],
   "parent":{
-    "name":"Presistent",
-    "path":"folders/Objects/Presistent.yy",
+    "name":"Persistent",
+    "path":"folders/Objects/Persistent.yy",
   },
   "parentObjectId":null,
   "persistent":true,

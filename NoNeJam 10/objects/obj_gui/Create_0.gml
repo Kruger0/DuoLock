@@ -12,3 +12,11 @@ cursor = {
 		draw_sprite_ext(sprite, 0, GUI_MOUSE_X, GUI_MOUSE_Y, scale*obj_cam.scl.gui, scale*obj_cam.scl.gui, angle, color, alpha)
 	}
 }
+
+col_scl = [
+	[1, 1],
+	[1, 1],
+	[1, 1],
+	[1, 1],
+]
+col_state = [0, 0, 0, 0]
