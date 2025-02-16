@@ -17,14 +17,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"259f3fbd-cb8d-4069-9045-d3ab0ac191f3","name":"259f3fbd-cb8d-4069-9045-d3ab0ac191f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c5436b47-3b43-459e-af30-7f153735ff65","name":"c5436b47-3b43-459e-af30-7f153735ff65","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":16,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"40ec8e82-a226-4bb7-b672-6d04299a03c7","blendMode":0,"displayName":"default","isLocked":false,"name":"40ec8e82-a226-4bb7-b672-6d04299a03c7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"127aaad2-f149-4128-86ee-50328d7992c7","blendMode":0,"displayName":"default","isLocked":false,"name":"127aaad2-f149-4128-86ee-50328d7992c7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_door_red_top",
   "nineSlice":{
@@ -39,10 +39,10 @@
     "resourceVersion":"2.0",
     "right":4,
     "tileMode":[
-      0,
-      0,
-      0,
-      0,
+      1,
+      1,
+      1,
+      1,
       1,
     ],
     "top":4,
@@ -93,8 +93,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"259f3fbd-cb8d-4069-9045-d3ab0ac191f3","path":"sprites/spr_door_red_top/spr_door_red_top.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b2b9bf75-f53c-4cd6-88d4-2396bd302cd2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c5436b47-3b43-459e-af30-7f153735ff65","path":"sprites/spr_door_red_top/spr_door_red_top.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c1470334-fc99-4453-89fc-47b55bb646e9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

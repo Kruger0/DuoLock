@@ -17,7 +17,7 @@ gpu_set_ztestenable(true)
 gpu_set_alphatestenable(true)
 gpu_set_alphatestref(0.5)
 
-display_reset(8, true)
+//display_reset(8, true)
 
 //==============================// 2D //=================================
 angle = 0

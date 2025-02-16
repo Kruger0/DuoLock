@@ -1,5 +1,6 @@
 
 switch (abs(image_angle)) {
+	case 360:
 	case 0: {
 		matrix_set(matrix_world, matrix_build(x, y+5-8, -8, -70, 0, 0, scl, scl, scl))
 		outline_draw_sprite(sprite_index, state, 0, 0, ol_config(show_outline, c_white, 1, 1));

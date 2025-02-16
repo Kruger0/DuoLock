@@ -5,6 +5,8 @@ if (string_letters(room_get_name(room)) == "rmlevel") {
 	var _buttons	= [obj_button_red, obj_button_blue, obj_button_yellow, obj_button_green]
 	var _state		= [0, 0, 0, 0]
 	var _spr		= [spr_light_red, spr_light_blue, spr_light_yellow, spr_light_green]
+	var _spr		= [spr_button_red, spr_button_blue, spr_button_yellow, spr_button_green]
+
 	var _line		= 0
 	for (var i = 0; i < 4; i++) {
 		if (!instance_exists(_levers[i]) && !instance_exists(_buttons[i])) {

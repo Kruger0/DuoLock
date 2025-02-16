@@ -25,3 +25,6 @@ if (room_tp) {
 	}
 }
 
+if (keyboard_check_pressed(vk_f8)) {
+	cam_tran_start(rm_level_0, 0, 0.5)
+}

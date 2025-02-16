@@ -17,8 +17,6 @@ function matrix_print_pretty(_m, _i = 1, _d = 2) {
 	return _str
 }
 
-show_debug_message(matrix_print_pretty(global.matrix_idendity, 3, 3))
-
 
 function matrix_set_world(_x, _y, _z, _xrot = 0, _yrot = 0, _zrot = 0, _xscal = 1, _yscal = 1, _zscal = 1) {
 	matrix_set(matrix_world, matrix_build(_x, _y, _z, _xrot, _yrot, _zrot, _xscal, _yscal, _zscal))

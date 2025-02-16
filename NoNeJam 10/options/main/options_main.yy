@@ -1,6 +1,11 @@
 {
   "$GMMainOptions":"v3",
   "%Name":"Main",
+  "ConfigValues":{
+    "DevMode":{
+      "option_remove_unused_assets":"false",
+    },
+  },
   "name":"Main",
   "option_audio_error_behaviour":false,
   "option_author":"",

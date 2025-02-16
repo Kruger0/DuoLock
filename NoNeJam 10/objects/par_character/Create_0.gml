@@ -24,7 +24,7 @@ take_dmg = function() {
 	var _list = ds_list_create()
 	var _dmg = collision_circle_list(x, y, GRID*2, dmg_source, true, true, _list, false)
 	if (_dmg) {
-		print(_dmg)
+
 		// Get mean
 		var _mx = 0
 		var _my = 0
@@ -46,7 +46,7 @@ take_dmg = function() {
 		
 			var _spd = 3
 			var _vec = new Vector2().SetDirection(_dir)
-			print(_vec.ToString())
+	
 		
 			vel.x += _vec.x * _spd
 			vel.y += _vec.y * _spd

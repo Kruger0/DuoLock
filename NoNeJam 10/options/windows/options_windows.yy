@@ -1,6 +1,13 @@
 {
   "$GMWindowsOptions":"",
   "%Name":"Windows",
+  "ConfigValues":{
+    "DevMode":{
+      "option_windows_display_name":"DuoLock",
+      "option_windows_vsync":"true",
+      "option_windows_icon":"icons/icon.ico",
+    },
+  },
   "name":"Windows",
   "option_windows_allow_fullscreen_switching":false,
   "option_windows_borderless":false,
