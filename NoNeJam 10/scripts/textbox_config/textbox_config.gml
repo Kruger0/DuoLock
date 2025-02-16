@@ -33,23 +33,23 @@ function __textbox_config() {
 		textbox_line_height	: 8,					// Altura da linha (ajustar pelo tamanho da fonte)
 		textbox_hpad		: 8,					// Espaco entre as laterais da caixa e o texto
 		textbox_vpad		: 2,					// Espaco entre o topo da caixa e o texto
-		textbox_ease_mode	: TextBoxEase.Expo,		// Tipo de animacao da caixa de texto
+		textbox_ease_mode	: TextBoxEase.Back,		// Tipo de animacao da caixa de texto
 		textbox_sprite		: undefined,			// Sprite padrao da caixa
 		textbox_frame		: 0,					// Frame padrao da caixa
 		
 
-		portrait_pad_x		: 2,					// Offset do portrait no eixo X
-		portrait_pad_y		: 0,					// Offset do portrait no eixo Y
+		portrait_pad_x		: 1,					// Offset do portrait no eixo X
+		portrait_pad_y		: 1,					// Offset do portrait no eixo Y
 		portrait_xscal		: 1,					// Escala do portrait no eixo X
 		portrait_yscal		: 1,					// Escala do portrait no eixo Y
-		portrait_name_pad_x	: 8,					// Offset do nome no eixo X
-		portrait_name_pad_y	: 0,					// Offset do nome no eixo Y
+		portrait_name_pad_x	: 2,					// Offset do nome no eixo X
+		portrait_name_pad_y	: 1,					// Offset do nome no eixo Y
 		portrait_name_scale	: 0.5,					// Escala do nome
 		portrait_size		: 32,					// Tamamho do portrait em pixels
 		portrait_color		: c_white,				// Cor do portrait
 		portrait_alpha		: 1.0,					// Alpha do portrait
 		portrait_prefix		: "[wave]",				// Prefixo de efeito que afeta todo o nome
-		portrait_skewer		: 0.2,					// Efeito de scale quando o diálogo muda
+		portrait_skewer		: 0.3,					// Efeito de scale quando o diálogo muda
 		
 		
 		skip_delay			: 30,					// Delay em frames pra aparecer o icone de skip

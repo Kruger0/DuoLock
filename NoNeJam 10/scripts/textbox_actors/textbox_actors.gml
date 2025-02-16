@@ -20,8 +20,8 @@
 function __textbox_actors() {
 	static actors = {	
 		system:		new TextboxActor("", undefined, snd_dialog_1, 1),
-		char1:		new TextboxActor("[#ff8080]Human[/c]", spr_char1_portrait, snd_dialog_1, 0.9),	
-		char2:		new TextboxActor("[#8080ff]Robot[/c]", spr_char2_portrait, snd_dialog_1, 1.1),
+		char1:		new TextboxActor("[#FFC825]Roberto[/c]", spr_char1_portrait, snd_dialog_1, 1.1),	
+		char2:		new TextboxActor("[#0CF1FF]CH4R-LE5[/c]", spr_char2_portrait, snd_dialog_1, 0.9),
 	};
 
 	return actors;

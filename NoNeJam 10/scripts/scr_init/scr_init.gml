@@ -24,7 +24,8 @@ global.seed = random_get_seed()
 
 #macro c_menu_on		#FFFFFF
 #macro c_menu_off		#606060
-#macro c_sunlight		#FFF0B0
+#macro c_char1			#FFC825
+#macro c_char2			#0CF1FF
 
 
 var KEEP_DATA = true;

@@ -28,11 +28,21 @@ function __textbox_dialogues() {
 				[Dialog.Text, "O homem é feito de casa, ou a casa é feita de carne?"],
 			]
 		},
-		poison : {
+		tutorial: {
+			events: [
+				[Dialog.Actor, ACTOR_SYSTEM],
+				[Dialog.Text, "Controles: [#FFFF20]WASD[#FFFFFF] ou Setas"],
+				[Dialog.Text, "Utilize [#FFFF20][[E][#FFFFFF] para interagir com objetos"],
+				[Dialog.Text, "Utilize [#FFFF20][[F][#FFFFFF] para trocar de personagem"],
+				[Dialog.Text, "Utilize [#FFFF20][[R][#FFFFFF] para reiniciar a fase"],
+				[Dialog.Text, "Utilize [#FFFF20][[Espaço][#FFFFFF] para pular diálogos que você possa achar desnecessariamente longos e esteja se perguntando o que o desenvolvedor pensou naquela hora..."],
+			]
+		},
+		acid : {
 			events: [
 				[Dialog.Actor, ACTOR_CHAR1],
-				[Dialog.Text, "Ih rapaz, essa parte tá cheia de veneno. Eu é que não vou andar por aqui"],
-				[Dialog.Text, "Mas veneno não afeta robôs. Talvêz ele consiga passar por aqui"],
+				[Dialog.Text, "Ih rapaz, essa parte tá cheia de ácido. Eu é que não vou andar por aqui"],
+				[Dialog.Text, "Mas ácido não afeta metal. Talvêz o robô consiga passar por aqui"],
 			]
 		},
 		water : {

@@ -7,8 +7,7 @@ if (vb_glow == -1) {
 	
 	
 	var _offset = global.yoff
-	var _c = #404060
-	_c = #FF8000
+	var _c = c_char1
 
 	vertex_begin(vb_glow, global.vform)
 	var _x = 0

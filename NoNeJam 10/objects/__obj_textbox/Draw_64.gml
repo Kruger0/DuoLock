@@ -34,8 +34,9 @@ matrix_set(matrix_world, matrix_build(
 	
 		var _port_sx	= (portrait_size / portrait_wid) - portrait_skew;
 		var _port_sy	= (portrait_size / portrait_wid) + portrait_skew;
+		var _port_ang	= dsin(current_time*0.2) * 2
 	
-		draw_sprite_ext(portrait_sprite, portrait_frame, _port_x, _port_y, _port_sx, _port_sy, 0, portrait_color, portrait_alpha)
+		draw_sprite_ext(portrait_sprite, portrait_frame, _port_x, _port_y, _port_sx, _port_sy, _port_ang, portrait_color, portrait_alpha)
 	}
 	
 	
