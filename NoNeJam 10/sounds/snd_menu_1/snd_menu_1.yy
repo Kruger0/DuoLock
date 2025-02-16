@@ -8,8 +8,13 @@
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
+  "ConfigValues":{
+    "DevMode":{
+      "audioGroupId":"{ \"name\":\"audio_sfx\", \"path\":\"audiogroups/audio_sfx\" }",
+    },
+  },
   "conversionMode":0,
-  "duration":0.206531,
+  "duration":0.5,
   "name":"snd_menu_1",
   "parent":{
     "name":"Effects",

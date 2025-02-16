@@ -1,4 +1,11 @@
 
+if (room == rm_init) {
+	layer_background_blend(layer_background_get_id(layer_get_id("Background")), c_tran)
+	if (obj_sound.group_music_loaded && obj_sound.group_sfx_loaded) {
+		cam_tran_start(rm_menu)
+	}
+}
+
 GAME_TIME += 16.67
 
 // Troca de personagem

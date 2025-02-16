@@ -94,6 +94,7 @@ tran_callback		= undefined
 level_goto_next = false
 level_delay = 0
 
+played_win_sfx = false
 
 //==============================// Functions //=================================
 

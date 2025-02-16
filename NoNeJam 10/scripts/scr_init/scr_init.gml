@@ -26,7 +26,8 @@ global.seed = random_get_seed()
 #macro c_menu_off		#606060
 #macro c_char1			#FFC825
 #macro c_char2			#0CF1FF
-
+#macro c_sky			#0E071B
+#macro c_tran			#000000
 
 var KEEP_DATA = true;
 if (file_exists(FILE_SAVE) && KEEP_DATA) {
@@ -67,5 +68,27 @@ global.mid_transition	= false
 global.gametime			= 0
 global.room_name		= ""
 global.surf_shadow		= -1
-
 global.current_char		= obj_char1
+
+global.flag_water		= false
+global.flag_acid		= false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

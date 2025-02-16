@@ -25,7 +25,7 @@ take_dmg = function() {
 	var _dmg = collision_circle_list(x, y, GRID*2, dmg_source, true, true, _list, false)
 	if (_dmg) {
 
-		// Get mean
+		// Empurra o jogador na direcao contrária média do dano
 		var _mx = 0
 		var _my = 0
 		for (var i = 0; i < _dmg; i++) {
@@ -35,14 +35,11 @@ take_dmg = function() {
 		}
 		_mx /= _dmg
 		_my /= _dmg
-		
+
 		var _col = instance_place(x, y, dmg_source)
 		if (_col && !stomp_time) {
 			stomp_time = 40
 			var _dir = point_direction(_mx, _my, x, y)
-			//print(_dir, _dir div 90)
-			////var _back = new Vector2()
-			//print(_dir)
 		
 			var _spd = 3
 			var _vec = new Vector2().SetDirection(_dir)
@@ -54,6 +51,21 @@ take_dmg = function() {
 			scale.y = 1.2;
 			velz += _spd*0.6
 			cam_fx_screenshake(60, 10, 5)
+			audio_play_sound(snd_hurt_1, 0, false, undefined, undefined, random_range(0.9, 1.1))
+			switch (dmg_source) {
+				case obj_water: {
+					if !(global.flag_water) {
+						textbox_create("water")
+						global.flag_water = true
+					}					
+				} break;
+				case obj_poison: {
+					if !(global.flag_acid) {
+						textbox_create("acid")
+						global.flag_acid = true
+					}					
+				} break;
+			}
 		}
 	}
 	//var _dmg = 
@@ -148,8 +160,9 @@ interact = function() {
 		with (_inst) {
 			show_outline = true
 			if (other.k_interact) {
-				_inst.state = !_inst.state
-				_inst.scl = 1.2
+				state = !state
+				audio_play_at(snd_click_1, x, y, false, undefined, 0, state ? 1.0 : 0.8)
+				scl = 1.2
 			}
 		}
 	}

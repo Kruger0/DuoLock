@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":1,
+  "compression":0,
   "conversionMode":0,
   "duration":58.2032,
   "name":"snd_music_menu",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_music_menu.mp3",
   "type":0,
-  "volume":1.0,
+  "volume":0.5,
 }

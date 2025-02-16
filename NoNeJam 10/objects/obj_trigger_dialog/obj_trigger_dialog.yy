@@ -30,6 +30,7 @@
     {"$GMObjectProperty":"v1","%Name":"character","filters":[],"listItems":[
         "obj_char1",
         "obj_char2",
+        "\"Both\"",
       ],"multiselect":false,"name":"character","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_char1","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"automatic","filters":[],"listItems":[],"multiselect":false,"name":"automatic","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],

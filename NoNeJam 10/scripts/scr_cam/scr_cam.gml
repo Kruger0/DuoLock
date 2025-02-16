@@ -16,7 +16,7 @@ function cam_fx_screenshake(duration, _speed, hor_mag, ver_mag = hor_mag, rotati
 }
 
 
-function cam_tran_start(destiny, type = 0, spd = 0.7, col = c_black, _callback = function(){}) {
+function cam_tran_start(destiny, type = 0, spd = 0.7, col = c_tran, _callback = function(){}) {
 	if (obj_cam.tran_state != TranStt.Idle) {
 		return;
 	}
@@ -48,4 +48,8 @@ function cam_tran_fake(_callback = function(){}, type = 0, spd = 0.4, col = c_bl
 
 function tran_reset_globals() {
 	//global.room_timer = 0
+}
+
+function transition_exists() {
+	return !obj_cam.tran_state == TranStt.Idle
 }

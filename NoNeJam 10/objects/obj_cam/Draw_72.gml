@@ -1,7 +1,7 @@
 
 // 3D process
 if (string_letters(room_get_name(room)) == "rmlevel") {
-	draw_clear_alpha(#0e071b, 0)
+	draw_clear_alpha(c_sky, 0)
 
 	var _acel = 0.075
 
@@ -9,14 +9,20 @@ if (string_letters(room_get_name(room)) == "rmlevel") {
 		
 		level_delay++
 		if (level_delay > 60) {
-			cam_tran_start(room_next(room), 0, , c_black, function() {
+			cam_tran_start(room_next(room), , , , function() {
 				obj_cam.level_delay = 0
 				obj_cam.level_goto_next = false
+				obj_cam.played_win_sfx = false
 				cam_ztarg = cam_zoff
 				cam_ytarg = cam_yoff
-			})
-			
+			})			
 		}
+		
+		if !(played_win_sfx) {
+			played_win_sfx = true
+			audio_play_sound(snd_level_pass, 0, false)
+		}
+		
 		cam3d.pos.x = lerp(cam3d.pos.x, lerp(obj_char1.x, obj_char2.x, 0.5)	 , _acel)
 		cam3d.pos.y = lerp(cam3d.pos.y, lerp(obj_char1.y, obj_char2.y, 0.5) + cam_ytarg, _acel)
 		cam3d.pos.z	= lerp(cam3d.pos.z, cam_ztarg, _acel)

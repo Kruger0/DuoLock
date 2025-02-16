@@ -8,3 +8,10 @@ function toggle_fullscreen() {
 	}
 	global.gamedata.video.fullscreen = window_get_fullscreen()
 }
+
+function show_intro(text) {
+	with (obj_gui) {
+		intro.time = 0
+		intro.text = text
+	}
+}
