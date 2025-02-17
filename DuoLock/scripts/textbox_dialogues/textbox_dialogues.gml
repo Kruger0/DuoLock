@@ -31,6 +31,15 @@ function __textbox_dialogues() {
 				[Dialog.Callback, call_later, [1, time_source_units_seconds, function(){cam_tran_start(rm_level_1)}, false]],
 			]
 		},
+		fim : {
+			events : [
+				[Dialog.Actor, ACTOR_CHAR1],
+				[Dialog.Text, "Conseguimos! Escapamos da masmorra! Sabia que [rainbow]Trabalhando em Equipe[/rainbow] conseguiriamos!"],
+				[Dialog.Actor, ACTOR_CHAR2],
+				[Dialog.Text, "Assistente Autônomo de Liberação por Ativacão Dupla [#0CF1FF]CH4R-LE5[/c], concluindo suas operações!."],
+				[Dialog.Callback, call_later, [1, time_source_units_seconds, function(){cam_tran_start(rm_credits)}, false]],
+			]
+		},
 		tutorial: {
 			events: [
 				[Dialog.Actor, ACTOR_SYSTEM],
@@ -88,7 +97,42 @@ function __textbox_dialogues() {
 				[Dialog.Text, "Buscando alternativas..."],
 				[Dialog.Text, "Diretríz recomendada: Contatar humano."],
 			]
-		}
+		},
+		bolinha: {
+			events : [
+				[Dialog.Actor, ACTOR_SYSTEM],
+				[Dialog.Text, "Bolinhas são divertidas"],
+				[Dialog.Text, "Menos quando te acertam na cara."],
+			],
+		},
+		dino: {
+			events : [
+				[Dialog.Actor, ACTOR_SYSTEM],
+				[Dialog.Text, "Me pergunto se este ovo de dinossauro ainda tem um mini T-Rex dentro"],
+				[Dialog.Text, "Ou se virou uma omelete pré-histórica."],
+			],
+		},
+		nave: {
+			events : [
+				[Dialog.Actor, ACTOR_SYSTEM],
+				[Dialog.Text, "Uma espaçonave vermelha, que parece ter vindo de outra galáxia"],
+				[Dialog.Text, "Atrás está escrito 'Feito na China'."],
+			],
+		},
+		oni: {
+			events : [
+				[Dialog.Actor, ACTOR_SYSTEM],
+				[Dialog.Text, "Onis são criaturas enormes e amedrontadoras que perseguiam samurais"],
+				[Dialog.Text, "O canto dessa máscara está suja de bolo de aniversário."],
+			],
+		},
+		controle: {
+			events : [
+				[Dialog.Actor, ACTOR_SYSTEM],
+				[Dialog.Text, "Quem iria ver TV em uma masmorra?"],
+				[Dialog.Text, "Talvês espíritos demoníacos entediados."],
+			],
+		},
 	}
 
 	return dialogues;

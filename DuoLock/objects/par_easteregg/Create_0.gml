@@ -1,0 +1,2 @@
+automatic = false
+outline = false

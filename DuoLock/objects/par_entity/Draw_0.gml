@@ -6,7 +6,7 @@ matrix_set(matrix_world, matrix_build(x, y, z, global.tilt, 0, 0, 1, 1, 1))
 	shader_reset()
 	
 	if (global.current_char.id == id) {
-		var _diag = instance_place(x, y, obj_trigger_dialog)
+		var _diag = instance_place(x, y, [obj_trigger_dialog, par_easteregg])
 		if (_diag && !_diag.automatic) {
 			draw_sprite(spr_open_dialog, 0, 0.5, -24 + sin_wave(4, 1))
 		}

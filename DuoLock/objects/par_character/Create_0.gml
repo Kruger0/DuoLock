@@ -2,7 +2,7 @@ event_inherited()
 
 // ============================================= Variables
 
-walk_spd		= 1.1
+walk_spd		= 1.2
 acel			= 0.2
 angle			= 0
 

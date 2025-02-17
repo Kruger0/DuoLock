@@ -7,6 +7,7 @@ var _theme = -1
 switch (room) {
 	case rm_credits: 
 	case rm_tutorial: 
+	case rm_fim: 
 	case rm_menu: {
 		_theme = snd_music_menu
 	} break;
