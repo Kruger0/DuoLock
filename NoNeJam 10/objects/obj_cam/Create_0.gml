@@ -23,7 +23,7 @@ gpu_set_alphatestref(0.5)
 angle = 0
 
 scl = {
-	cam : 1,
+	cam : 0.5,
 	gui : 1,
 	win	: 3,
 	aps	: 3,

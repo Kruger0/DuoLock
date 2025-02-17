@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"textbox_dialogues",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"textbox_dialogues",
+  "parent":{
+    "name":"Public",
+    "path":"folders/Libraries/Krug/TextBox/Public.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

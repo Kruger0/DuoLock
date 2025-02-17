@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ember_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ember_data",
+  "parent":{
+    "name":"Ember",
+    "path":"folders/Libraries/Krug/Ember.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -5,7 +5,7 @@ var _cb = #FF6020
 var _title_scl = 4.0
 
 // title
-scribble("[wave]NoNeJam 10 Game").blend(_ct, 1).transform(_title_scl, _title_scl).gradient(_cb, 1.2).align(1, 1).draw(GUI_WID/2, GUI_HEI*0.2)
+scribble("[wave]DuoLock").blend(_ct, 1).transform(_title_scl, _title_scl).gradient(_cb, 1.2).align(1, 1).draw(GUI_WID/2, GUI_HEI*0.2)
 
 interface_process()
 interface_draw()
@@ -26,8 +26,13 @@ switch (menu_level) {
 					menu_level = 1					
 				}
 			}
-			break;		
+			break;	
 			case 2: {
+				if (k_select) {					
+					cam_tran_start(rm_credits)
+				}
+			} break;
+			case 3: {
 				if (k_select) {
 					game_end()
 				}
@@ -133,5 +138,7 @@ if (_level != menu_level) {
 		op_data[i] = [1, 1, 0, 0]
 	}
 }
+
+scribble("[[WASD]: Movimento\n[[Enter]: Selecionar\n[[Esc]: Voltar").align(2, 2).draw(GUI_WID-16, GUI_HEI-8)
 
 

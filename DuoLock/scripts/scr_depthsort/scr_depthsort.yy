@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_depthsort",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_depthsort",
+  "parent":{
+    "name":"Function",
+    "path":"folders/Scripts/Function.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

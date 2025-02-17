@@ -20,6 +20,7 @@ function __textbox_dialogues() {
 				[Dialog.Text, "Aperte [#FFFF20][[E][#FFFFFF] para interagir com objetos."],
 				[Dialog.Text, "Aperte [#FFFF20][[F][#FFFFFF] para trocar de personagem."],
 				[Dialog.Text, "Segure [#FFFF20][[R][#FFFFFF] para reiniciar a fase."],
+				[Dialog.Text, "Segure [#FFFF20][[Esc][#FFFFFF] para voltar ao menu inicial."],
 				[Dialog.Callback, function(){obj_gui.col_scl_default = 1}],
 				[Dialog.Text, "Os indicadores no canto da tela monstram quais cores estão ativas."],
 			]

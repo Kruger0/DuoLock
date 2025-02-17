@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__fsm_system",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__fsm_system",
+  "parent":{
+    "name":"Core",
+    "path":"folders/Libraries/KazanGames/Core.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

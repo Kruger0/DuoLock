@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"DevNotes",
+  "name":"DevNotes",
+  "parent":{
+    "name":"TextBox",
+    "path":"folders/Libraries/Krug/TextBox.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

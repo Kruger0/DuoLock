@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__scr_ulib_core",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__scr_ulib_core",
+  "parent":{
+    "name":"ULib",
+    "path":"folders/Libraries/Krug/ULib.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
