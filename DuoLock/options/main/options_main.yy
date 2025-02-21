@@ -4,6 +4,7 @@
   "ConfigValues":{
     "DevMode":{
       "option_remove_unused_assets":"false",
+      "option_gameguid":"66149740-b87a-4f30-b270-4beb2e0417ae",
     },
   },
   "name":"Main",

@@ -1,6 +1,21 @@
 {
   "$GMOperaGXOptions":"",
   "%Name":"Opera GX",
+  "ConfigValues":{
+    "DevMode":{
+      "option_operagx_game_name":"DuoLock",
+      "option_operagx_mod_game_name":"Created with GameMaker",
+      "option_operagx_interpolate_pixels":"false",
+      "option_operagx_display_cursor":"false",
+      "option_operagx_version":"1.0.0.0",
+      "option_operagx_next_version":"1.0.0.1",
+      "option_operagx_guid":"d5db91e6-a8a8-4fcb-8429-e712aa78330a",
+      "option_operagx_team_id":"572d8ef4-206e-49c4-924f-795467ea5c24",
+      "option_operagx_team_name":"KrugDev Studios",
+      "option_operagx_editUrl":"https://dev.gx.games/games/d5db91e6-a8a8-4fcb-8429-e712aa78330a/details",
+      "option_operagx_internalShareUrl":"https://gx.games/games/u6h47k/duolock/tracks/ad2f313d-826b-42da-8498-e0d916560bd0/",
+    },
+  },
   "name":"Opera GX",
   "option_operagx_display_cursor":true,
   "option_operagx_editUrl":"",

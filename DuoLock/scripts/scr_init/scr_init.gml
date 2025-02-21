@@ -30,7 +30,7 @@ window_enable_borderless_fullscreen(true)
 #macro c_sky			#0E071B
 #macro c_tran			#000000
 
-var KEEP_DATA = true;
+var KEEP_DATA = false;
 if (file_exists(FILE_SAVE) && KEEP_DATA) {
 	global.gamedata = json_load(FILE_SAVE)
 } else {

@@ -6,7 +6,8 @@ var _title_scl = 4.0
 
 // title
 //scribble("[wave]DuoLock").blend(_ct, 1).transform(_title_scl, _title_scl).gradient(_cb, 1.2).align(1, 1).draw(GUI_WID/2, GUI_HEI*0.2)
-draw_sprite_ext(spr_name, 0, GUI_WID/2, GUI_HEI*0.2, 2, 2, sin_wave(1, 3), -1, 1)
+var _title_scl = 0.5
+draw_sprite_ext(spr_name, 0, GUI_WID/2, GUI_HEI*0.2, _title_scl, _title_scl, sin_wave(1, 3), -1, 1)
 
 interface_process()
 interface_draw()

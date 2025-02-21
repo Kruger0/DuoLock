@@ -19,7 +19,7 @@ function __textbox_dialogues() {
 				[Dialog.Text, "Após tropeçar de um alçapão enferrujado e cair em um buraco, você se viu numa espécie de labirinto, com portas e botões espalhados."],
 				[Dialog.Text, "Voçê tenta apertá-los, porém estão muito distantes da porta. Não há como escapar daqui sozinho."],
 				[Dialog.Text, "Olhando pro canto da sala, você encontra um robô, aparentemente desligado."],
-				[Dialog.Text, "Parece ter tropeçado sozinho, e a queda fez a chave de energa ser desligada. Você liga ele."],
+				[Dialog.Text, "Parece ter tropeçado sozinho, e a queda fez a chave de energia ser desligada. Você liga ele."],
 				[Dialog.Actor, ACTOR_CHAR2],
 				[Dialog.Text, "Sequência de inicialização... Sistemas operantes... Pronto para continuar com o prococolo 'DuoLock'."],
 				[Dialog.Actor, ACTOR_CHAR1],
@@ -55,13 +55,13 @@ function __textbox_dialogues() {
 		button : {
 			events: [
 				[Dialog.Actor, ACTOR_SYSTEM],
-				[Dialog.Text, "Botões são ativados ao pisar encima, e desativam ao sair dele."],
+				[Dialog.Text, "Botões são ativados ao pisar em cima, e desativam ao sair dele."],
 			]
 		},
 		lever : {
 			events: [
 				[Dialog.Actor, ACTOR_SYSTEM],
-				[Dialog.Text, "Alavancas permanecerão ativas até serem manualmente desativadas."],
+				[Dialog.Text, "Alavancas permanecerão ativas até serem manualmente desativadas. Se uma estiver ativada, ativar outra não mudará o sinal"],
 			]
 		},
 		colors : {
